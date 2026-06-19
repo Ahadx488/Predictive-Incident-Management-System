@@ -34,7 +34,7 @@ Predictive Incident Management System is an intelligent traffic operations platf
 
 The platform combines Machine Learning, Geospatial Intelligence, Explainable AI (SHAP), Semantic Incident Retrieval (FAISS), and Decision Support Analytics to improve traffic incident response and resource allocation.
 
----
+
 
 ## 📈 Project Highlights
 
@@ -47,7 +47,7 @@ The platform combines Machine Learning, Geospatial Intelligence, Explainable AI 
 * Operational decision-support recommendations
 * What-if simulation engine
 
----
+
 
 ## 🎯 Problem Statement
 
@@ -69,7 +69,7 @@ This can result in:
 
 This platform automates incident assessment and provides intelligent operational decision support.
 
----
+
 
 ## ✨ Key Features
 
@@ -108,7 +108,7 @@ This platform automates incident assessment and provides intelligent operational
 * Incident Timeline Generation
 * What-If Scenario Simulation
 
----
+
 
 ## 🏗️ System Architecture
 
@@ -128,7 +128,7 @@ flowchart TD
     A --> B --> C --> D --> E --> F --> G --> H --> I --> J
 ```
 
----
+
 
 ## 🤖 Machine Learning Pipeline
 
@@ -155,7 +155,7 @@ flowchart TD
 * Location Density
 * Cluster ID
 
----
+
 
 ## 🔍 Historical Incident Retrieval using FAISS
 
@@ -176,7 +176,7 @@ The platform incorporates Retrieval-Augmented Decision Support through FAISS.
 
 This enables the platform to leverage historical incident knowledge beyond structured machine learning predictions.
 
----
+
 
 ## 📍 Geospatial Intelligence
 
@@ -189,7 +189,7 @@ The platform performs:
 
 to identify high-risk traffic zones and support operational planning.
 
----
+
 
 ## 🛠️ Tech Stack
 
@@ -229,7 +229,7 @@ to identify high-risk traffic zones and support operational planning.
 * Frontend: Vercel
 * Backend: Render
 
----
+
 
 ## 📂 Project Structure
 
@@ -254,7 +254,7 @@ Predictive-Incident-Management-System
 └── README.md
 ```
 
----
+
 
 ## 🚀 Local Setup
 
@@ -298,7 +298,7 @@ Frontend runs at:
 http://localhost:3000
 ```
 
----
+
 
 ## 📊 Core Capabilities
 
@@ -322,7 +322,7 @@ http://localhost:3000
 
 ✅ Operational Decision Support
 
----
+
 
 ## ⚠️ Deployment Note
 
@@ -330,7 +330,7 @@ The complete development version includes transformer-based semantic retrieval u
 
 Due to the 512 MB memory limitation of the free Render deployment tier, the public hosted version runs an optimized inference configuration. The complete FAISS-powered retrieval pipeline remains available in the local development build and demonstration environment.
 
----
+
 
 ## 🔮 Future Enhancements
 
@@ -341,6 +341,6 @@ Due to the 512 MB memory limitation of the free Render deployment tier, the publ
 * Multi-City Deployment Support
 * Streaming Incident Analytics
 
----
+
 
 ⭐ If you found this project interesting, consider giving it a star.
