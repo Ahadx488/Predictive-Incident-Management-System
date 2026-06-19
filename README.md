@@ -21,29 +21,12 @@ AI-Powered Traffic Incident Intelligence & Decision Support Platform
 
 ## 🌐 Live Demo
 
-**Frontend:** (https://predictive-incident-management-syst.vercel.app/)
+**Frontend:** https://predictive-incident-management-syst.vercel.app/
 
 **Backend API:** https://predictive-incident-management-system.onrender.com
 
 **API Documentation:** https://predictive-incident-management-system.onrender.com/docs
 
----
-
-## 📸 Dashboard Preview
-
-### Main Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
-### Incident Analysis
-
-![Analysis](screenshots/analysis.png)
-
-### Decision Support
-
-![Decision Support](screenshots/decision_support.png)
-
----
 
 ## 📌 Overview
 
