@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import pandas as pd, numpy as np, joblib, faiss, json
 from datetime import datetime, timedelta
-from sentence_transformers import SentenceTransformer
+#from sentence_transformers import SentenceTransformer
 from catboost import CatBoostClassifier, CatBoostRegressor, Pool
 
 app = FastAPI()
@@ -23,9 +23,9 @@ cluster_centroids = pd.read_pickle("cluster_centroids.pkl")
 with open("dataset_stats.json", "r") as f: dataset_stats = json.load(f)
 with open("model_metrics.json", "r") as f: model_metrics = json.load(f)
 
-embedder = SentenceTransformer(joblib.load("embedding_model.pkl"))
-faiss_index = faiss.read_index("faiss_index.bin")
-historical_corpus = pd.read_pickle("historical_corpus.pkl")
+embedder = None
+faiss_index = None
+historical_corpus = None
 
 class IncidentRequest(BaseModel):
     event_type: str; event_cause: str; zone: str; junction: str
@@ -168,16 +168,10 @@ def predict_incident(req: IncidentRequest):
         narrative_reasons.append("Location profile strongly correlates with traffic restrictions.")
 
     # 5. FAISS Semantic Search
-    query_vec = embedder.encode([f"{req.event_cause} {req.event_type} {req.description} {req.reason_breakdown} {req.zone} {req.junction}"]).astype('float32')
-    faiss.normalize_L2(query_vec)
-    distances, indices = faiss_index.search(query_vec, 3)
-    
-    similar_incidents = [{"id": str(historical_corpus.iloc[idx]['id']), "event_cause": str(historical_corpus.iloc[idx]['event_cause']), "priority": str(historical_corpus.iloc[idx]['priority']), "requires_road_closure": str(historical_corpus.iloc[idx]['requires_road_closure']), "resolution_minutes": float(historical_corpus.iloc[idx]['resolution_minutes']), "similarity": f"{d*100:.1f}%"} for d, idx in zip(distances[0], indices[0]) if idx < len(historical_corpus)]
+    similar_incidents = []
 
     # 6. Model Consensus / Agreement
     faiss_prio = "N/A"
-    if similar_incidents:
-        faiss_prio = max(set([inc['priority'] for inc in similar_incidents]), key=[inc['priority'] for inc in similar_incidents].count)
     
     agreement_score = 1 # The ML Model itself is Source #1
     if prio == faiss_prio: agreement_score += 1 # FAISS is Source #2
