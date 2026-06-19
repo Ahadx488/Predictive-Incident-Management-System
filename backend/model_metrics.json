@@ -1,0 +1,1 @@
+{"priority_f1": 100.0, "priority_prec": 100.0, "priority_rec": 100.0, "priority_roc_auc": 100.0, "priority_deterministic": false, "closure_f1": 66.1, "closure_prec": 65.0, "closure_rec": 67.5, "closure_roc_auc": 80.0, "resolution_mae_hours": 1.7, "resolution_rmse_hours": 4.0, "resolution_r2": 0.15}
