@@ -195,39 +195,57 @@ to identify high-risk traffic zones and support operational planning.
 
 ### Frontend
 
-* React.js
-* Leaflet Maps
-* Chart.js
-* CSS
+<p>
+<img src="https://skillicons.dev/icons?i=react" />
+</p>
+
+- React.js
+- Leaflet Maps
+- Chart.js
+- CSS
 
 ### Backend
 
-* FastAPI
-* Uvicorn
+<p>
+<img src="https://skillicons.dev/icons?i=python,fastapi" />
+</p>
+
+- FastAPI
+- Uvicorn
+- Python
 
 ### Machine Learning
 
-* CatBoost
-* Scikit-Learn
-* SHAP
-* NumPy
-* Pandas
+<p>
+<img src="https://skillicons.dev/icons?i=python" />
+</p>
+
+- CatBoost
+- Scikit-Learn
+- SHAP
+- NumPy
+- Pandas
 
 ### Semantic Retrieval
 
-* FAISS
-* SentenceTransformers
+- FAISS
+- SentenceTransformers
+- all-MiniLM-L6-v2
 
-### Geospatial Analytics
+### Geospatial Intelligence
 
-* DBSCAN
-* Nearest Neighbors
-* Spatial Density Analysis
+- DBSCAN
+- Nearest Neighbors
+- Spatial Density Analysis
 
 ### Deployment
 
-* Frontend: Vercel
-* Backend: Render
+<p>
+<img src="https://skillicons.dev/icons?i=vercel" />
+</p>
+
+- Vercel
+- Render
 
 
 
