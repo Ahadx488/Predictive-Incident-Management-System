@@ -21,7 +21,7 @@ AI-Powered Traffic Incident Intelligence & Decision Support Platform
 
 ## 🌐 Live Demo
 
-**Frontend:** Add your Vercel URL here
+**Frontend:** [Add your Vercel URL here](https://predictive-incident-management-syst.vercel.app/)
 
 **Backend API:** https://predictive-incident-management-system.onrender.com
 
