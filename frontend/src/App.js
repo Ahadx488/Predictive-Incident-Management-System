@@ -7,7 +7,7 @@ import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 // 🛑 UPDATE THIS TO YOUR RENDER URL BEFORE DEPLOYING!
-const API_URL = "http://localhost:8000https://predictive-incident-management-system.onrender.com"; 
+const API_URL = "https://predictive-incident-management-system.onrender.com"; 
 
 // // Safely import marker images for React/Webpack
 // import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
